@@ -317,24 +317,40 @@ a { color: inherit; }
   white-space: nowrap;
   border: 1px solid transparent;
 }
+
+/* ACTIVE — green */
 .status-active {
   background: rgba(77, 143, 91, 0.15);
   color: #3c6d47;
   border-color: rgba(77, 143, 91, 0.4);
 }
+
+/* BUILDING — amber */
 .status-building {
-  background: rgba(150, 120, 50, 0.15);
+  background: rgba(200, 150, 40, 0.18);
   color: #8a6a1f;
-  border-color: rgba(150, 120, 50, 0.35);
+  border-color: rgba(200, 150, 40, 0.45);
 }
+
+/* NEXT — blue */
+.status-next {
+  background: rgba(70, 120, 190, 0.15);
+  color: #3a5f96;
+  border-color: rgba(70, 120, 190, 0.4);
+}
+
+/* EXPERIMENT — grey (kept for future use) */
 .status-experiment {
   background: rgba(120, 120, 120, 0.15);
   color: #666;
   border-color: rgba(120, 120, 120, 0.3);
 }
-[data-theme="dark"] .status-active { color: #8fd39c; }
-[data-theme="dark"] .status-building { color: #e0c072; }
-[data-theme="dark"] .status-experiment { color: #b7c2b8; }
+
+/* Dark mode overrides */
+[data-theme="dark"] .status-active { color: #8fd39c; background: rgba(77, 143, 91, 0.2); }
+[data-theme="dark"] .status-building { color: #e0c072; background: rgba(200, 150, 40, 0.2); }
+[data-theme="dark"] .status-next { color: #8ab4f0; background: rgba(70, 120, 190, 0.2); }
+[data-theme="dark"] .status-experiment { color: #b7c2b8; background: rgba(120, 120, 120, 0.2); }
 
 .tag-list {
   list-style: none;
