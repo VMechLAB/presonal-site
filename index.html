@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vasilije — Robotics, Electronics &amp; Software</title>
+<meta name="description" content="Personal engineering site for Vasilije. Robotics, embedded systems, electronics and software projects, built and documented as they happen.">
+<meta name="theme-color" content="#1b3a2f">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vasilije — Robotics, Electronics &amp; Software">
+<meta property="og:description" content="Robotics, embedded systems, electronics and software projects — built, broken and rebuilt in the open.">
+<meta property="og:image" content="assets/images/og-cover.svg">
+
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <a href="#top" class="wordmark">
+      <span class="wordmark-mark" aria-hidden="true">/\</span>
+      <span class="wordmark-text">VMechLAB</span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#build-log">Build Log</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#now">Now</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-controls">
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to light mode">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1.5V3M8 13v1.5M2.6 2.6l1.06 1.06M12.34 12.34l1.06 1.06M1.5 8H3M13 8h1.5M2.6 13.4l1.06-1.06M12.34 3.66l1.06-1.06" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/><circle cx="8" cy="8" r="3.4" stroke="currentColor" stroke-width="1.1"/></svg>
+        <span class="theme-toggle-label">Light</span>
+      </button>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="hero-label">ROBOTICS • ELECTRONICS • SOFTWARE</p>
+        <h1 class="hero-heading">I build things that move, think and work.</h1>
+        <p class="hero-sub">I'm a robotics and embedded-systems developer building experimental hardware, software and autonomous systems — mostly at a desk covered in wires and coffee.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="https://github.com/vmechlab" class="btn btn-secondary" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <div class="status-line" aria-label="Current status">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>Currently building <strong>VMechLAB</strong> + <strong>TerOS</strong></span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 420 420" class="hero-svg">
+          <g class="topo-lines" stroke="currentColor" fill="none" stroke-width="1">
+            <path d="M20 60 C 120 20, 300 20, 400 90"/>
+            <path d="M10 120 C 130 70, 300 80, 410 150"/>
+            <path d="M0 190 C 140 130, 290 150, 420 210"/>
+          </g>
+          <g class="arm-graphic" stroke="currentColor" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="150" y="330" width="120" height="18" rx="2"/>
+            <line x1="210" y1="330" x2="210" y2="270"/>
+            <circle cx="210" cy="264" r="8"/>
+            <line x1="216" y1="258" x2="290" y2="210"/>
+            <circle cx="296" cy="204" r="7"/>
+            <line x1="301" y1="199" x2="330" y2="140"/>
+            <circle cx="333" cy="133" r="6"/>
+            <path d="M333 133 l14 -10 M333 133 l6 -16" />
+          </g>
+          <g class="circuit-dots" fill="currentColor">
+            <circle cx="70" cy="250" r="2.5"/>
+            <circle cx="70" cy="280" r="2.5"/>
+            <circle cx="100" cy="280" r="2.5"/>
+            <circle cx="100" cy="310" r="2.5"/>
+            <line x1="70" y1="250" x2="70" y2="280" stroke="currentColor" stroke-width="1"/>
+            <line x1="70" y1="280" x2="100" y2="280" stroke="currentColor" stroke-width="1"/>
+            <line x1="100" y1="280" x2="100" y2="310" stroke="currentColor" stroke-width="1"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="section-inner about-grid">
+      <div class="about-main">
+        <h2>About</h2>
+        <p>I work across electronics, embedded programming, robotics, Python and CAD. Most of what's on this site was built from scratch — usually wrong the first time — and documented as I went rather than written up afterward to look tidy.</p>
+        <p>I care more about understanding why something works than getting it to work once and moving on. That means a lot of my "finished" projects still have loose ends, and I'd rather show that than hide it.</p>
+      </div>
+      <div class="about-side">
+        <div class="learning-block">
+          <h3>Where this is going</h3>
+          <p>Long-term, I want a quiet life somewhere in nature, still building weird technical stuff — not a conventional office career.</p>
+        </div>
+        <div class="learning-block">
+          <h3>How I got here</h3>
+          <p>Electronics first, then robotics and embedded systems, then software to tie it together. Still mostly self-taught, still figuring out the gaps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="section-inner">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <div class="filter-group" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn is-active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="robotics">Robotics</button>
+          <button class="filter-btn" data-filter="electronics">Electronics</button>
+          <button class="filter-btn" data-filter="software">Software</button>
+          <button class="filter-btn" data-filter="experimental">Experimental</button>
+        </div>
+      </div>
+
+      <div class="project-grid" id="project-grid">
+
+        <article class="project-card project-card--large" data-tags="robotics software">
+          <div class="project-card-head">
+            <h3>VMechLAB</h3>
+            <span class="status-tag status-active">ACTIVE</span>
+          </div>
+          <p>A configurable robotic-arm simulator for kinematics, motion planning and 3D visualization.</p>
+          <ul class="tag-list">
+            <li>Python</li><li>PyVista</li><li>Rust</li><li>NumPy</li><li>Robotics</li>
+          </ul>
+          <div class="project-card-foot">
+            <a href="https://github.com/vmechlab" class="link-arrow" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-tags="software experimental">
+          <div class="project-card-head">
+            <h3>TerOS</h3>
+            <span class="status-tag status-building">BUILDING</span>
+          </div>
+          <p>A nature-inspired, retro-modern operating system / web OS experiment.</p>
+          <ul class="tag-list">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+          <div class="project-card-foot">
+            <span class="link-arrow link-arrow--disabled">Repo coming soon</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-tags="software experimental">
+          <div class="project-card-head">
+            <h3>Mudrac</h3>
+            <span class="status-tag status-active">ACTIVE</span>
+          </div>
+          <p>A local AI voice-assistant experiment combining automation, local models and speech technologies.</p>
+          <ul class="tag-list">
+            <li>Python</li><li>n8n</li><li>LLMs</li><li>Piper</li><li>Automation</li>
+          </ul>
+          <div class="project-card-foot">
+            <a href="https://github.com/vmechlab" class="link-arrow" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-tags="electronics robotics">
+          <div class="project-card-head">
+            <h3>ESP32-S3 Scope</h3>
+            <span class="status-tag status-building">BUILDING</span>
+          </div>
+          <p>Dual-channel USB oscilloscope with AC/DC coupling, BNC inputs, an AD9833 signal generator, PC display and audio feedback.</p>
+          <ul class="tag-list">
+            <li>ESP32-S3</li><li>AD9833</li><li>USB</li><li>Embedded C</li>
+          </ul>
+          <div class="project-card-foot">
+            <a href="https://github.com/vmechlab" class="link-arrow" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card" data-tags="experimental">
+          <div class="project-card-head">
+            <h3>PNA</h3>
+            <span class="status-tag status-experiment">EXPERIMENT</span>
+          </div>
+          <p>A personal project focused on experimentation and development. Details are still being written up.</p>
+          <ul class="tag-list">
+            <li>Placeholder</li>
+          </ul>
+          <div class="project-card-foot">
+            <span class="link-arrow link-arrow--disabled">Details pending</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="image-strip" aria-label="Project image placeholders">
+        <figure class="image-placeholder"><span>IMG 01</span></figure>
+        <figure class="image-placeholder"><span>IMG 02</span></figure>
+        <figure class="image-placeholder"><span>IMG 03</span></figure>
+        <figure class="image-placeholder"><span>IMG 04</span></figure>
+        <figure class="image-placeholder"><span>IMG 05</span></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="build-log">
+    <div class="section-inner">
+      <h2>Build log</h2>
+      <div class="log-list">
+        <div class="log-entry">
+          <span class="log-date">09.09.2026</span>
+          <span class="log-project">VMechLAB</span>
+          <span class="log-note">Shipped a major simulator update.</span>
+        </div>
+        <div class="log-entry">
+          <span class="log-date">08.09.2026</span>
+          <span class="log-project">Mudrac</span>
+          <span class="log-note">Finished the first usable voice-assistant version.</span>
+        </div>
+        <div class="log-entry">
+          <span class="log-date">07.09.2026</span>
+          <span class="log-project">TerOS</span>
+          <span class="log-note">Started designing the new OS interface.</span>
+        </div>
+        <div class="log-entry">
+          <span class="log-date">05.09.2026</span>
+          <span class="log-project">ESP32-S3 Scope</span>
+          <span class="log-note">First USB packets to the PC at full sample rate. BNC panel fits.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tint" id="interests">
+    <div class="section-inner">
+      <h2>Interests</h2>
+      <p class="section-lede">Outside of building things, this is roughly what takes up the rest of my head — pinned to the board exactly as messy as it is in real life.</p>
+
+      <div class="pin-board">
+
+        <div class="pin-note" style="top:0; left:20px; --rot:-2deg;">
+          <span class="pin-cat">ANIME</span>
+          <h3>Bleach</h3>
+          <p>Rewatched the Soul Society arc. Still peak.</p>
+        </div>
+
+        <div class="pin-note" style="top:25px; left:250px; --rot:1.5deg;">
+          <span class="pin-cat">ANIME</span>
+          <h3>Vinland Saga</h3>
+          <p>The farmland arc hits different after 25.</p>
+        </div>
+
+        <div class="pin-note" style="top:5px; left:490px; --rot:-1deg;">
+          <span class="pin-cat">ANIME</span>
+          <h3>Hell's Paradise</h3>
+          <p>Gabimaru is the coldest protagonist going.</p>
+        </div>
+
+        <div class="pin-note" style="top:100px; left:110px; --rot:2deg;">
+          <span class="pin-cat">ANIME</span>
+          <h3>Chainsaw Man</h3>
+          <p>Part 2 manga only. No spoilers.</p>
+        </div>
+
+        <div class="pin-note" style="top:140px; left:340px; --rot:-1.5deg;">
+          <span class="pin-cat">ANIME</span>
+          <h3>Frieren</h3>
+          <p>Slowest show, fastest rewatch.</p>
+        </div>
+
+        <div class="pin-note" style="top:105px; left:630px; --rot:1deg;">
+          <span class="pin-cat">GAMES</span>
+          <h3>Bloodborne</h3>
+          <p>Platinum'd it. The hunt never really ends.</p>
+        </div>
+
+        <div class="pin-note" style="top:240px; left:20px; --rot:-1.5deg;">
+          <span class="pin-cat">GAMES</span>
+          <h3>Sekiro</h3>
+          <p>Deflection timing rewired my brain.</p>
+        </div>
+
+        <div class="pin-note" style="top:275px; left:260px; --rot:2.5deg;">
+          <span class="pin-cat">GAMES</span>
+          <h3>ARK</h3>
+          <p>500+ hours and I still can't build a decent base.</p>
+        </div>
+
+        <div class="pin-note" style="top:245px; left:550px; --rot:-2deg;">
+          <span class="pin-cat">GAMES</span>
+          <h3>Metro Exodus</h3>
+          <p>The Volga chapter is underrated.</p>
+        </div>
+
+        <div class="pin-note" style="top:380px; left:130px; --rot:1.5deg;">
+          <span class="pin-cat">GAMES</span>
+          <h3>Dying Light</h3>
+          <p>Night-time parkour was a mistake I keep making.</p>
+        </div>
+
+        <div class="pin-note" style="top:410px; left:400px; --rot:-1deg;">
+          <span class="pin-cat">GAMES</span>
+          <h3>Valheim</h3>
+          <p>Portal logistics is a personality trait.</p>
+        </div>
+
+        <div class="pin-note" style="top:375px; left:660px; --rot:2deg;">
+          <span class="pin-cat">TRAINING</span>
+          <h3>Kickboxing</h3>
+          <p>Three sessions a week. Shin conditioning is no joke.</p>
+        </div>
+
+        <div class="pin-note" style="top:520px; left:30px; --rot:-2deg;">
+          <span class="pin-cat">TRAINING</span>
+          <h3>Running</h3>
+          <p>Slow 10Ks through the forest. No watch, no pace.</p>
+        </div>
+
+        <div class="pin-note" style="top:555px; left:300px; --rot:1deg;">
+          <span class="pin-cat">TRAINING</span>
+          <h3>Calisthenics</h3>
+          <p>Working toward a strict muscle-up.</p>
+        </div>
+
+        <div class="pin-note" style="top:515px; left:590px; --rot:-1.5deg;">
+          <span class="pin-cat">CARS</span>
+          <h3>Project ideas</h3>
+          <p>Older manual diesel wagon + toolbox = happiness.</p>
+        </div>
+
+        <div class="pin-note" style="top:660px; left:150px; --rot:2deg;">
+          <span class="pin-cat">AEROSPACE</span>
+          <h3>Rockets &amp; planes</h3>
+          <p>Kerbal doesn't count, but it should.</p>
+        </div>
+
+        <div class="pin-note" style="top:690px; left:430px; --rot:-1deg;">
+          <span class="pin-cat">MISC</span>
+          <h3>Coffee</h3>
+          <p>Third pour-over of the day. Non-negotiable.</p>
+        </div>
+
+        <div class="pin-note" style="top:655px; left:680px; --rot:1.5deg;">
+          <span class="pin-cat">MISC</span>
+          <h3>Forest walks</h3>
+          <p>Best debugging tool ever invented.</p>
+        </div>
+
+      </div>
+
+      <p class="log-note-placeholder">More notes get pinned as things come up. The board is never "done" — like most of my projects.</p>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Electronics</h3>
+          <ul>
+            <li>ESP32</li><li>STM32</li><li>Arduino</li><li>Sensors</li><li>Motors</li><li>Servos</li><li>Communication protocols</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Embedded</h3>
+          <ul>
+            <li>C / C++</li><li>Microcontrollers</li><li>ESP-NOW</li><li>UART</li><li>I&sup2;C</li><li>SPI</li><li>PWM</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Software</h3>
+          <ul>
+            <li>Python</li><li>Git</li><li>GitHub</li><li>Linux</li><li>Automation</li><li>APIs</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Engineering</h3>
+          <ul>
+            <li>Robotics</li><li>CAD</li><li>Kinematics</li><li>Control systems</li><li>3D printing</li><li>Laser cutting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tint" id="philosophy">
+    <div class="section-inner">
+      <h2>How I build</h2>
+      <div class="philosophy-grid">
+        <div class="philosophy-item">
+          <h3>Build first</h3>
+          <p>I learn fastest when I can actually build and test something, not just read about it.</p>
+        </div>
+        <div class="philosophy-item">
+          <h3>Understand the system</h3>
+          <p>I don't want something to simply work. I want to understand why it works.</p>
+        </div>
+        <div class="philosophy-item">
+          <h3>Iterate</h3>
+          <p>First versions are allowed to be rough. The goal is to keep improving them.</p>
+        </div>
+        <div class="philosophy-item">
+          <h3>Document it</h3>
+          <p>Projects should leave behind useful code, documentation and lessons — not just a working demo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="now">
+    <div class="section-inner">
+      <h2>Now</h2>
+      <p class="section-lede">A snapshot of what's actually on my bench and in my head right now, not a career summary.</p>
+      <div class="now-grid">
+        <div class="learning-block">
+          <h3>Building</h3>
+          <p>Robotics, embedded systems, autonomous machines.</p>
+        </div>
+        <div class="learning-block">
+          <h3>Learning</h3>
+          <p>Control systems, advanced robotics, computer vision, aerospace systems.</p>
+        </div>
+        <div class="learning-block">
+          <h3>Exploring</h3>
+          <p>AI, distributed systems, unconventional interfaces.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tint" id="timeline">
+    <div class="section-inner">
+      <h2>Timeline</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-year">2024</span>
+          <p>Started building more serious electronics projects.</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-year">2025</span>
+          <p>Expanded into robotics, embedded systems and software.</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-year">2026</span>
+          <p>Building larger projects, open-source software and experimental systems.</p>
+        </li>
+        <li class="timeline-item timeline-item--next">
+          <span class="timeline-year">Next</span>
+          <p>Robotics engineering, autonomous systems and advanced hardware.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="github">
+    <div class="section-inner github-block">
+      <div>
+        <h2>GitHub</h2>
+        <p>Most of what I build ends up here, eventually — some of it half-finished, some of it stable enough to depend on.</p>
+        <a href="https://github.com/vmechlab" class="btn btn-secondary" target="_blank" rel="noopener">@vmechlab on GitHub</a>
+      </div>
+      <ul class="repo-list" id="repo-list"></ul>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="section-inner contact-block">
+      <h2>Let's build something.</h2>
+      <p>Have a project, idea or interesting problem? I'd be happy to hear about it.</p>
+      <div class="contact-links">
+        <a href="mailto:hello@vmechlab.dev" class="btn btn-primary">Email me</a>
+        <a href="https://github.com/vmechlab" class="btn btn-secondary" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://instagram.com/vmechlab" class="btn btn-instagram" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="wordmark-text">Vasilije / VMechLAB</span>
+      <p>Built while learning, breaking and rebuilding things.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/vmechlab" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://instagram.com/vmechlab" target="_blank" rel="noopener">Instagram</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="footer-copy">&copy; <span id="footer-year"></span> Vasilije</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
