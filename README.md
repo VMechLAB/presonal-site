@@ -1,6 +1,6 @@
 # VMechLAB
  
-Personal engineering portfolio site for **ME** (VMech) — a place to showcase who I am, what I build, and the projects I've worked on. The site supports both dark and light themes and is built to highlight visuals from my work.
+Personal engineering portfolio site for **ME** (VMech) — a place to showcase who I am, what I build, and the projects I've worked on. The site supports both dark and light themes and is built to show my work.
  
 **Live site:** https://vmechlab.github.io/presonal-site/
  
@@ -53,3 +53,5 @@ Then open `http://localhost:3000` in your browser.
 ## 📄 License
  
 - MIT - do whatever with it :)
+
+## PS. if you are reading this love you ❤️
